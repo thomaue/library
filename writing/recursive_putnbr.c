@@ -4,11 +4,10 @@
 
 void ft_putnbr(int nb)
 {
-    int i;
+    int i=0;
     unsigned int nbr;
     char num[10]="0123456789";
-    i=0;
-
+    
     if (nb<0)
     {
         write(1,"-",1);
