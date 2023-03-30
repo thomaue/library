@@ -1,5 +1,7 @@
 #include <unistd.h>
 
+//returns the size of the base, or 0 in case of error
+
 int checkbase(char *base)
 {
     int sizebase=0;
