@@ -4,7 +4,7 @@
 //ignores whitespaces and +/-
 //needs to be free
 
-char *clear_str(char *str)
+char *clear_nbr(char *str)
 {
     int i=0;
     int i2=0;
@@ -26,9 +26,13 @@ char *clear_str(char *str)
         }
         else if (str[i] >= 48 && str[i] <= 122)
         {
-            newstr[i2] = str[i];
-            i+=1;
-            i2+=1; 
+            while(str[i] >= 48 && str[i] <= 122)
+            {
+                newstr[i2] = str[i];
+                i+=1;
+                i2+=1; 
+            }
+            break;
         }
         else
         {
